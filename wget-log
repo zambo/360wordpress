@@ -1,0 +1,6 @@
+--2020-04-10 04:52:35--  https://142.93.8.219/smb/file-manager/download?file=wp_c1ty2_2020-04-10_00-52-47.sql.zip
+Connecting to 142.93.8.219:443... connected.
+ERROR: cannot verify 142.93.8.219's certificate, issued by ‘emailAddress=info@plesk.com,CN=Plesk,O=Plesk,L=Schaffhausen,C=CH’:
+  Self-signed certificate encountered.
+    ERROR: certificate common name ‘Plesk’ doesn't match requested host name ‘142.93.8.219’.
+To connect to 142.93.8.219 insecurely, use `--no-check-certificate'.

@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "phpcbf.executablePath": "/var/www/.composer/vendor/bin/phpcbf",
+  "phpcbf.onsave": true,
+  "phpcs.composerJsonPath": "/var/www/html/wp-content"
+}

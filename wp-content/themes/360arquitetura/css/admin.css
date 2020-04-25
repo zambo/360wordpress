@@ -1,0 +1,57 @@
+.benefit-columns .acf-table tbody {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+	.benefit-columns .acf-table tbody {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1280px) {
+	.benefit-columns .acf-table tbody {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.benefit-columns .acf-table tbody .acf-fields {
+	/* display: flex; */
+	width: 100%;
+}
+.benefit-columns .acf-row-handle.remove {
+	opacity: 0;
+	width: 0 !important;
+	padding: 0 !important;
+}
+
+.admin-grid .row-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 16px;
+}
+
+@media (min-width: 1024px) {
+	.admin-grid .row-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (min-width: 1280px) {
+	.admin-grid .row-wrapper {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+
+.admin-grid .client-item {
+	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.admin-grid .portfolio-item {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	cursor: initial;
+}
