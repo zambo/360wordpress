@@ -1,0 +1,12 @@
+[submodule "wp-content/plugins/wp-graphql"]
+	path = wp-content/plugins/wp-graphql
+	url = https://github.com/wp-graphql/wp-graphql.git
+[submodule "wp-content/plugins/wp-graphiql"]
+	path = wp-content/plugins/wp-graphiql
+	url = https://github.com/wp-graphql/wp-graphiql.git
+[submodule "wp-content/plugins/wp-graphql-custom-post-type-ui"]
+	path = wp-content/plugins/wp-graphql-custom-post-type-ui
+	url = https://github.com/wp-graphql/wp-graphql-custom-post-type-ui.git
+[submodule "wp-content/plugins/wp-graphql-acf"]
+	path = wp-content/plugins/wp-graphql-acf
+	url = https://github.com/wp-graphql/wp-graphql-acf.git
