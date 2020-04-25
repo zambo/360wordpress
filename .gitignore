@@ -15,7 +15,6 @@ wp-content/plugins/hello.php
 /*
 !.gitignore
 !wp-content/
-!wp-config.php
 
 # ignore specific themes
 wp-content/themes/twenty*/
