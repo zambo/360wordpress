@@ -12,7 +12,7 @@ function register_acf_block_types() {
 			'render_template' => 'template-parts/blocks/testimonial/testimonial.php',
 			'enqueue_style'   => get_template_directory_uri() . '/template-parts/blocks/testimonial/testimonial.css',
 			'align'           => 'full',
-			'post_types'      => array( 'portfolio' ),
+			'post_types'      => array( 'portfolio', 'page' ),
 			'mode'            => 'auto',
 			'category'        => 'formatting',
 			'icon'            => 'admin-comments',
@@ -79,15 +79,16 @@ function register_acf_block_types() {
 			'title'           => __( 'Hero' ),
 			'description'     => __( 'Hero' ),
 			'render_template' => 'template-parts/blocks/hero/hero.php',
-			'enqueue_assets'  => function () {
-				wp_enqueue_style( 'block-hero', get_template_directory_uri() . '/template-parts/blocks/hero/hero.css', array(), '1.0.0' );
-			},
+			'align'           => 'wide',
 			'mode'            => 'auto',
 			'category'        => 'widgets',
 			'post_types'      => array( 'portfolio', 'post', 'page' ),
 			'icon'            => 'laptop',
-			'align'           => 'wide',
 			'keywords'        => array( 'hero', 'header', 'title', 'título', 'cabeçalho' ),
+			'supports'        => array(
+				'align'    => array( 'full' ),
+				'multiple' => false,
+			),
 		)
 	);
 }
