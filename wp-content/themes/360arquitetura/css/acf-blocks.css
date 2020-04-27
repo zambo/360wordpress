@@ -1,0 +1,176 @@
+.acf-block {
+	padding: 4rem;
+	color: #111216;
+	font-weight: 400;
+}
+
+.acf-block .half-width {
+	max-width: 525px;
+}
+
+.acf-block strong {
+	font-weight: bold;
+}
+
+.acf-block .kicker {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+	color: #db4128;
+}
+
+.acf-block .title {
+	font-weight: 900;
+	letter-spacing: -0.05rem;
+}
+
+.acf-block .buttons {
+	display: flex;
+	margin-top: 2rem;
+}
+
+.acf-block .btn {
+	background-color: #db4128;
+	padding: 1rem 3rem;
+	color: #fff;
+	margin-bottom: 1.5rem;
+	font-weight: 900;
+	letter-spacing: -0.025em;
+	font-size: 0.875rem;
+	display: block;
+	margin-right: 1.5rem;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.acf-block__dual {
+	display: grid;
+	grid-gap: 2em;
+	align-items: center;
+	grid-template-columns: 1fr;
+}
+
+
+@media (min-width: 1024px) {
+	.acf-block__dual {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+/* Hero */
+
+.acf-block__hero img {
+	width: 100%;
+}
+
+/* Clients */
+
+.acf-block__clients {
+	width: 100%;
+}
+
+.acf-block__clients .client-logos {
+	width: 100%;
+	padding: 4rem;
+	grid-gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+	align-items: center;
+	background: #111216;
+	margin:0;
+}
+
+.acf-block__clients .client-logos li{
+	margin:0;
+	padding: 0;
+}
+
+
+.acf-block__latest-works {
+	margin-bottom: 0;
+}
+
+.acf-block__latest-works .content {
+	max-width: 535px;
+}
+
+.acf-block__latest-works__portfolio {
+	margin-top:0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 0;
+}
+
+.acf-block__latest-works__portfolio img{
+width:100%;
+}
+
+.acf-block__section-background {
+	position: relative;
+	overflow: hidden;
+}
+.acf-block__section-background .background-image {
+	position: absolute;
+	width: 100%;
+	opacity: 0.2;
+	top:0;
+	bottom:0;
+	left:0;
+	top:0;
+	height: 100%;
+	z-index:0;
+
+}
+
+.acf-block__section-background {
+	margin: 4rem 0 !important;
+	background: #111216;
+}
+
+.acf-block__section-background .background-image img {
+	object-fit: cover;
+	width:100%;
+}
+
+.acf-block__section-background .content {
+	position: relative;
+	z-index: 10;
+	max-width: 1070px;
+	margin-left: auto;
+	margin-right: auto;
+		padding: 4rem;
+}
+
+.acf-block__section-background .content * {
+	max-width: 525px;
+	margin-left: auto;
+}
+
+.acf-block__section-background .content .title {
+	color: white;
+}
+
+.acf-block__section-background .content .text {
+	color: #a0aec0;
+}
+
+/* Features */
+.acf-block__features .features {
+	width: 100%;
+	margin: 2rem 0;
+	display: grid;
+	grid-gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+	.acf-block__features .features {
+			grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+
+.acf-block__features .feature {
+}

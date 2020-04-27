@@ -1,16 +1,22 @@
 
+
 .post-type-page .editor-post-title {
 	border-bottom: 1px solid #adb2ad;
 }
 
 .post-type-page .edit-post-visual-editor .wp-block {
-	max-width: 100%;
+	max-width: 1440px;
 }
 
 .post-type-page .editor-post-title__input {
 	font-size: 1.2rem;
 }
 
+
+
+
+
+/* replace later on */
 .benefit-columns .acf-table tbody {
 	display: grid;
 	grid-template-columns: 1fr;

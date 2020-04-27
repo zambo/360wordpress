@@ -36,40 +36,56 @@ $placeholder           = '<img src="https://via.placeholder.com/300x300/f5f5f5/5
 
 ?>
 
-<div id="<?php echo esc_attr( $block_id ); ?>" class="acf-block-hero <?php echo esc_attr( $block_class ); ?>">
-
-
-<div class="kicker">
-<?php if ( $hero_kicker ) : ?>
-	<?php echo $hero_kicker; ?>
-<?php else : ?>
-	...Adicionar pré-título
-<?php endif; ?>
-</div>
-
-<div class="title">
-<?php if ( $hero_title ) : ?>
-	<?php echo $hero_title; ?>
-<?php else : ?>
-	...Adicionar Título
-<?php endif; ?>
-</div>
-
-<div class="content">
-<?php if ( $hero_text ) : ?>
-	<?php echo $hero_text; ?>
-<?php else : ?>
-	...Adicionar Conteúdo
-<?php endif; ?>
-</div>
+<div id="<?php echo esc_attr( $block_id ); ?>" class="acf-block acf-block__hero acf-block__dual <?php echo esc_attr( $block_class ); ?>">
 
 
 	<div>
 		<?php if ( $hero_image ) : ?>
-			<?php echo wp_get_attachment_image( $hero_image, 'medium' ); ?>
+		<div class="image"><?php echo wp_get_attachment_image( $hero_image, 'medium' ); ?></div>
+
 		<?php else : ?>
-			<img src="https://via.placeholder.com/300x300/f5f5f5/555d66?text=%20">
+		<div class="image"><img src="https://via.placeholder.com/300x300/f5f5f5/555d66?text=%20" /></div>
 		<?php endif; ?>
 	</div>
 
-<div>
+	<div class="content">
+
+		<div class="kicker">
+		<?php if ( $hero_kicker ) : ?>
+			<?php echo $hero_kicker; ?>
+		<?php else : ?>
+			Aenean imperdiet
+		<?php endif; ?>
+		</div>
+
+		<h1 class="title">
+		<?php if ( $hero_title ) : ?>
+			<?php echo $hero_title; ?>
+		<?php else : ?>
+			In enim justo, rhoncus ut
+		<?php endif; ?>
+		</h1>
+
+		<div class="text">
+		<?php if ( $hero_text ) : ?>
+			<?php echo $hero_text; ?>
+		<?php else : ?>
+			<p>Lorem ipsum dolor sit amet, <strong>consectetuer adipiscing</strong> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		<?php endif; ?>
+		</div>
+
+
+		<div class="buttons">
+		<?php if ( $hero_primary_button ) : ?>
+			<a class="btn" href="<?php echo $hero_primary_button['url']; ?>"><?php echo $hero_primary_button['title']; ?></a>
+		<?php endif; ?>
+
+		<?php if ( $hero_secondary_button ) : ?>
+			<a class="btn" href="<?php echo $hero_secondary_button['url']; ?>"><?php echo $hero_secondary_button['title']; ?></a>
+		<?php endif; ?>
+		</div>
+
+	</div>
+
+</div>
+
